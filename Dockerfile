@@ -16,4 +16,4 @@ RUN git clone https://github.com/vlang/v
 RUN cd v && make
 RUN ./v/v symlink
 RUN bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
-
+RUN apt install vim nano neofetch --yes
