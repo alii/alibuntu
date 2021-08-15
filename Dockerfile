@@ -7,10 +7,10 @@ RUN apt install --yes nodejs
 RUN apt install --yes radare2
 RUN apt install --yes openjdk-11-jdk
 RUN apt install --yes wget
-RUN wget https://dl.google.com/go/go1.16.5.linux-amd64.tar.gz
-RUN tar -C /usr/local -xzf go1.16.5.linux-amd64.tar.gz
+RUN wget https://dl.google.com/go/go1.16.7.linux-amd64.tar.gz
+RUN tar -C /usr/local -xzf go1.16.7.linux-amd64.tar.gz
 RUN ln -s /usr/local/go/bin/go /usr/local/bin/go
-RUN rm go1.16.5.linux-amd64.tar.gz
+RUN rm go1.16.7.linux-amd64.tar.gz
 RUN apt install --yes make clang g++ git
 RUN git clone https://github.com/vlang/v
 RUN cd v && make
