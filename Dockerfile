@@ -12,8 +12,8 @@ RUN tar -C /usr/local -xzf go1.16.7.linux-amd64.tar.gz
 RUN ln -s /usr/local/go/bin/go /usr/local/bin/go
 RUN rm go1.16.7.linux-amd64.tar.gz
 RUN apt install --yes make clang g++ git
-RUN git clone https://github.com/vlang/v
-RUN cd v && make
-RUN ./v/v symlink
+# RUN git clone https://github.com/vlang/v
+# RUN cd v && make
+# RUN ./v/v symlink
 RUN bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 RUN apt install vim nano neofetch --yes
